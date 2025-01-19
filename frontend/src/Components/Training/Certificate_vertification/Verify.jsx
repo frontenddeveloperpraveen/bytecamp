@@ -8,7 +8,10 @@ const Verify = () => {
   const [certificateId, setCertificateId] = useState("");
   const [responseMessage, setResponseMessage] = useState(null);
   const [certificateInfo, setCertificateInfo] = useState(null);
-
+  const WP_Link = {
+    custom: "https://wa.link/2oniai",
+    default: "https://wa.link/98x0l7",
+  };
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent form reload
 
