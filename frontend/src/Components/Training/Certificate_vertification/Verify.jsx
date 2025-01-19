@@ -5,18 +5,6 @@ import Footer from "../Python/Footer";
 import Helmet from "react-helmet";
 
 const Verify = () => {
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
-
-  gtag("config", "G-R3BH2K650Y");
-  const WP_Link = {
-    custom: "https://wa.link/2oniai",
-    default: "https://wa.link/98x0l7",
-  };
-
   const [certificateId, setCertificateId] = useState("");
   const [responseMessage, setResponseMessage] = useState(null);
   const [certificateInfo, setCertificateInfo] = useState(null);
@@ -79,10 +67,6 @@ const Verify = () => {
           content="https://bytecamp.in/certificate_verify"
         />
         <meta property="og:type" content="website" />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-R3BH2K650Y"
-        ></script>
       </Helmet>
       <Navbar url={WP_Link} />
       <h1 className="lg:text-xl text-5xl font-semibold text-center my-10">
