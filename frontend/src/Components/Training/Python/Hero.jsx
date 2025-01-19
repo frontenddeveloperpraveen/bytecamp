@@ -3,7 +3,7 @@ import React from "react";
 import { Slider } from "../../Slider";
 import Countdown from "../../Countdown";
 
-const Hero = ({ details }) => {
+const Hero = ({ details, link }) => {
   return (
     <main className="lg:flex lg:mx-20  lg:mt-20 mt-16 gap-5">
       <div className="lg:w-1/2">
@@ -80,9 +80,13 @@ const Hero = ({ details }) => {
           {/* rating */}
           <div className="lg:w-fit mt-2">
             <div className="flex gap-2 mt-3 items-center lg:justify-normal justify-center">
-              <button className="lg:px-3 lg:py-2 px-6 py-5 rounded-[4px] bg-[rgb(243,80,80)] hover:bg-[rgb(256,80,80)] font-semibold text-xl tracking-wider text-white ">
-                <span className="lg:text-base text-5xl">Join Now @ ₹1999</span>
-              </button>
+              <a href={link.custom} target="blank">
+                <button className="lg:px-3 lg:py-2 px-6 py-5 rounded-[4px] bg-[rgb(243,80,80)] hover:bg-[rgb(256,80,80)] font-semibold text-xl tracking-wider text-white ">
+                  <span className="lg:text-base text-5xl">
+                    Join Now @ ₹1999
+                  </span>
+                </button>
+              </a>
               <strike className="lg:block hidden">₹3000</strike>
             </div>
             <div className="lg:w-fit mt-2 ">

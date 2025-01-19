@@ -38,7 +38,7 @@ const CustomerReviews = ({ reviews }) => {
     <section className="bg-white py-12 lg:py-8">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 lg:py-16">
         <h2 className="text-center lg:text-2xl font-bold tracking-tight text-gray-900 text-5xl pb-4 lg:pb-0">
-          Read trusted reviews from our customers
+          Read trusted reviews from our students
         </h2>
 
         <div className="relative mt-8 lg:w-full w-[85%] mx-auto">

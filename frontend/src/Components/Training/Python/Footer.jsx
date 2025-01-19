@@ -51,6 +51,13 @@ const Footer = ({ link }) => {
         >
           Privacy Policy
         </a>
+        <a
+          className="hover:text-gray-900"
+          href="/certificate_verify"
+          target="blank"
+        >
+          Verify Certificate
+        </a>
         <a className="hover:text-gray-900" href={link.custom} target="blank">
           Enroll Course
         </a>

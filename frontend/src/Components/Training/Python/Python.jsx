@@ -9,8 +9,16 @@ import Working from "../../Working";
 import Syllabus from "../../Syllabus";
 import CustomerReviews from "../../CustomerReviews";
 import Footer from "./Footer";
+import Helmet from "react-helmet";
 
 const Python = () => {
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-R3BH2K650Y");
   const Slider_info = [
     {
       src: "/assets/images/summer-offer-byte-camp-python-course-cheap-price.png",
@@ -31,10 +39,9 @@ const Python = () => {
   ];
 
   const WP_Link = {
-    custom: "https://wa.link/jozyum",
-    default: "https://wa.link/q6lpsz",
+    custom: "https://wa.link/2oniai",
+    default: "https://wa.link/98x0l7",
   };
-
   const Course_syllabus = [
     {
       title: "Getting Started with Programming",
@@ -141,35 +148,38 @@ const Python = () => {
 
   const FAQ_course = [
     {
-      question: "Do I need any pre-requisite knowledge for this course ?",
-      answer:
-        "No Need. This course is designed in the way that could be easily understood by anyone and very beginner friendly.",
+      question: "Do I need any pre-requisite knowledge for this course?",
+      answer: `<p>No Need. This course is designed in a way that could be easily understood by anyone and is very beginner-friendly.</p>`,
+    },
+    {
+      question: "How to pay for the course?",
+      answer: `<p>Click the Join Now button and our team will contact you.</p>`,
     },
     {
       question: "Live classes or Recorded classes?",
-      answer:
-        "You will be having LIVE classes on daily basis. And the recorded session of the respective classes will be sent to you.",
+      answer: `<p>You will be having <strong>LIVE</strong> classes on a daily basis. The recorded session of the respective classes will also be sent to you.</p>`,
     },
     {
       question: "How can I raise my doubts?",
-      answer:
-        "You can ask you doubts at the end of each sessions or else you can send personal messages to the Mentor and clear you doubts.",
+      answer: `<p>You can ask your doubts at the end of each session, or you can send personal messages to the Mentor and clear your doubts.</p>`,
     },
     {
-      question: "Once I made the Payment what I have to do?",
+      question: "What if I don’t get a confirmation call after payment?",
       answer: `
-      1.Send the screenshot of the payment to our Whatsapp number with Transaction ID.
-      2.Once we recieved the payment, Our team will contact you over the phone to confirm. (within 6 Hours)
-      3.Then you'll be guided by our team members.`,
+      <ul style="list-style:decimal; margin-left:20px">
+        <li>Ensure you have sent the payment screenshot with the Transaction ID to the correct <a href="${WP_Link.default}" target="blank" ><b style="color:#0000EE">WhatsApp number</b></a>.</li>
+        <li>If you haven’t received a call within 6 hours, please contact us on <a href="mailto:mail.bytecamp@gmail.com" target="blank" ><b style="color:#0000EE">mail.bytecamp@gmail.com</b></a>.</li>
+        <li>Our team will prioritize and assist you promptly.</li>
+      </ul>
+    `,
     },
     {
-      question: "How can I do the Payments?",
-      answer: `You can do the payment by UPI (advised) as you don't need to pay any extra charges.`,
+      question: "What modes of payment are available?",
+      answer: `<p>You can make the payment via <strong>UPI</strong> (advised) as it avoids any extra charges.</p>`,
     },
     {
       question: "I don't have UPI, What can I do?",
-      answer:
-        "You can contact our Team either by Whatsapp or Email. They will guide you to resolve your problem.",
+      answer: `<p>You can contact our Team either through  <a href="${WP_Link.default}" target="blank" ><b style="color:#0000EE">WhatsApp</b></a> or <a href="mailto:mail.bytecamp@gmail.com" target="blank" ><b style="color:#0000EE">Email</b></a>. They will guide you to resolve your problem.</p>`,
     },
   ];
 
@@ -182,11 +192,26 @@ const Python = () => {
         "It is an excellent platform to learn coding. The platform is well structured and they even provide assignment on regular basis",
     },
     {
+      name: "Saravanan S",
+      image:
+        "https://lh3.googleusercontent.com/-i07CQ3LOPQ0/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmhgRli73IRVC9a1pwVihaw2yv7pA/photo.jpg",
+      review:
+        "The online Python course exceeded my expectations! It provided a comprehensive curriculum, interactive exercises, and excellent instructor support. Highly recommended for anyone looking to learn Python efficiently.",
+    },
+    {
       name: "J Pooja",
       image:
-        "https://www.cctvforum.com/uploads/monthly_2018_12/J_member_37994.png",
+        "https://lh3.googleusercontent.com/-skL6n8h6414/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rc4c2KcDsooG3zc7KWsLVL_uzdzLw/mo/photo.jpg",
       review:
         "It really exceeded my expectations. The recordings, assignments, and final assessment helped me well. It is very useful.",
+    },
+
+    {
+      name: "Nandini S A",
+      image:
+        "https://lh5.googleusercontent.com/-HUHDOIBRdOI/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rexMlk9Sa711erdbDClucBXz-kLLQ/photo.jpg",
+      review:
+        "I found it beneficial. However, the mentor should focus on improving pronunciation of words to enhance the overall learning experience. However I enjoyed the complete course.",
     },
     {
       name: "Ritvik S",
@@ -195,21 +220,59 @@ const Python = () => {
       review:
         "The doubt-clearing session was very helpful and provided additional clarity.",
     },
+
     {
-      name: "Samantha Devi",
+      name: "V ராஜா",
       image:
-        "https://tse3.mm.bing.net/th?id=OIP.NOdSDhg2pUNIg-BihWYnawD6D6&rs=1&pid=ImgDetMain",
+        "https://i.pinimg.com/474x/a3/e5/2b/a3e52bf536eef4d9a85bdc0df555c8b3.jpg",
       review:
-        "My experience with online class was excellent. The instructor had good knowledge about the subject. He was very supportive.",
+        "எனக்கு English அவ்வளவா வராது. எனக்கு புரியிற மாதிரி சொல்லிக் கொடுத்தாங்க, Class எனக்கு ரொம்ப நல்லாவே புரிஞ்சது, என் டவுட்ஸ் எல்லாத்தையும் கிளியர் பண்ணாங்க.",
     },
   ];
 
   return (
     <>
+      <Helmet>
+        <title>Python Programming Training</title>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-R3BH2K650Y"
+        ></script>
+        <meta
+          name="title"
+          content="Python Programming Mastery Online Training"
+        />
+        <meta
+          name="description"
+          content="Master advanced Python programming skills with our online training course in Tamil. Enroll now for ₹1999 (₹3000 original price). Classes start on 18th Feb 2025. Enjoy 3 days refund policy, recorded classes, certificate, code support, 1:1 doubts clearing, practical sessions, and assignments. Limited offer till 30th Jan 2025."
+        />
+        <meta
+          name="keywords"
+          content="Python Programming, Tamil Online Course, Advanced Python, Online Training, Python Certification, Code Support, Practical Sessions, Refund Policy, Doubts Clearing, Programming Course"
+        />
+        <meta name="author" content="Bytecamp" />
+        <meta
+          property="og:title"
+          content="Python Programming Mastery Online Training"
+        />
+        <meta
+          property="og:description"
+          content="Master advanced Python programming skills with ease in Tamil. Enroll now for ₹1999 (₹3000 original price). 3 days refund policy, recorded classes, and more. Offer valid till 30th Jan 2025."
+        />
+        <meta
+          property="og:image"
+          content="/assests/images/summer-offer-byte-camp-python-course-cheap-price.png"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://bytecamp.in/training/python-programming"
+        />
+      </Helmet>
       <Notification />
       <Navbar url={WP_Link} />
       <section className="mx-5">
-        <Hero details={Slider_info} />
+        <Hero details={Slider_info} link={WP_Link} />
       </section>
       <section>
         <div className="my-4 lg:my-0 lg:py-0 py-12">

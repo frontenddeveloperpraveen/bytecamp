@@ -11,8 +11,9 @@ export const Slider = ({ details }) => {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
+        loop={true}
         autoplay={{
-          delay: 6000,
+          delay: 4500,
           disableOnInteraction: false,
         }}
         pagination={{

@@ -10,7 +10,7 @@ const FAQ = ({ faqs }) => {
   };
 
   return (
-    <div className="relative w-full bg-white px-6 pt-10 pb-8 mt-8 shadow-xl ring-1 ring-gray-900/5 lg:mx-auto  lg:rounded-lg lg:px-10">
+    <div className="relative w-full bg-white px-6 pt-10 pb-8 mt-8 shadow-xl ring-1 ring-gray-900/5 lg:mx-auto lg:rounded-lg lg:px-10">
       <div className="lg:mx-auto lg:px-5">
         <div className="flex flex-col items-center">
           <h2 className="mt-5 text-center lg:text-4xl font-bold tracking-tight text-7xl">
@@ -49,9 +49,10 @@ const FAQ = ({ faqs }) => {
                 </span>
               </div>
               {openIndex === index && (
-                <p className="mt-3 text-neutral-600 text-3xl lg:text-base">
-                  {faq.answer}
-                </p>
+                <div
+                  className="mt-3 text-neutral-600 text-3xl lg:text-base"
+                  dangerouslySetInnerHTML={{ __html: faq.answer }}
+                />
               )}
             </div>
           ))}
