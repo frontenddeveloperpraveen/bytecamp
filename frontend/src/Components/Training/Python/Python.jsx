@@ -234,10 +234,6 @@ const Python = () => {
     <>
       <Helmet>
         <title>Python Programming Training</title>
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-R3BH2K650Y"
-        ></script>
         <meta
           name="title"
           content="Python Programming Mastery Online Training"
@@ -268,6 +264,10 @@ const Python = () => {
           property="og:url"
           content="https://bytecamp.in/training/python-programming"
         />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-R3BH2K650Y"
+        ></script>
       </Helmet>
       <Notification />
       <Navbar url={WP_Link} />

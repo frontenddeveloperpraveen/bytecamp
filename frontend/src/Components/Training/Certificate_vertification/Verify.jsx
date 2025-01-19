@@ -79,6 +79,10 @@ const Verify = () => {
           content="https://bytecamp.in/certificate_verify"
         />
         <meta property="og:type" content="website" />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-R3BH2K650Y"
+        ></script>
       </Helmet>
       <Navbar url={WP_Link} />
       <h1 className="lg:text-xl text-5xl font-semibold text-center my-10">
