@@ -14,7 +14,7 @@ import Helmet from "react-helmet";
 const Python = () => {
   const Slider_info = [
     {
-      src: "/assets/images/summer-offer-byte-camp-python-course-cheap-price.png",
+      src: "/assets/images/summer-offer-byte-camp-python-course-cheap-price.jpg",
       alt: "Byte Camp Offer 20% Offer",
     },
     {
