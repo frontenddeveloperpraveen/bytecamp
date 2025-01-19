@@ -12,6 +12,25 @@ import Footer from "./Footer";
 import Helmet from "react-helmet";
 
 const Python = () => {
+  const Slider_info = [
+    {
+      src: "/assets/images/summer-offer-byte-camp-python-course-cheap-price.png",
+      alt: "Byte Camp Offer 20% Offer",
+    },
+    {
+      src: "/assets/images/bytecamp-offer-offering-2500rs-cheap-python-course-online-recorded-sessions.png",
+      alt: "Byte Camp Massive 20% Offer",
+    },
+    {
+      src: "/assets/images/Roadmap-bytecamp-python-cheap-2500rs-online-teaching-easy-study.png",
+      alt: "Byte Camp Road Map for Python Programming",
+    },
+    {
+      src: "/assets/images/bytecamp-ways-to-success-offer-python-course-machinelearning-waytosuccess.png",
+      alt: "Byte Camp Ways to Success",
+    },
+  ];
+
   const WP_Link = {
     custom: "https://wa.link/2oniai",
     default: "https://wa.link/98x0l7",
