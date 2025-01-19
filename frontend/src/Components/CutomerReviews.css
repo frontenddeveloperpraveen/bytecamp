@@ -1,0 +1,7 @@
+.keen-slider__slide {
+  opacity: 0.4;
+}
+
+.keen-slider__slide[aria-hidden="false"] {
+  opacity: 1;
+}

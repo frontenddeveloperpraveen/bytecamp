@@ -1,0 +1,116 @@
+import React, { useState } from "react";
+import axios from "axios";
+import Navbar from "../../Navbar";
+import Footer from "../Python/Footer";
+
+const Verify = () => {
+  const WP_Link = {
+    custom: "https://wa.link/jozyum",
+    default: "https://wa.link/q6lpsz",
+  };
+  const [certificateId, setCertificateId] = useState("");
+  const [responseMessage, setResponseMessage] = useState(null);
+  const [certificateInfo, setCertificateInfo] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Prevent form reload
+
+    try {
+      document.getElementById("submit-btn").innerHTML = "Loading...";
+      const response = await axios.post(
+        "http://localhost:5000/api/certificate/verify",
+        {
+          certificateId,
+        }
+      );
+
+      setResponseMessage(response.data.message);
+      document.getElementById("submit-btn").innerHTML = "Submit";
+
+      if (response.data.message === "Certificate is valid") {
+        setCertificateInfo(response.data); // Store the certificate info
+      } else {
+        setCertificateInfo(null); // Clear the certificate info if invalid
+      }
+    } catch (error) {
+      console.error(error);
+      setResponseMessage(
+        "Error verifying certificate. Please try again later."
+      );
+      setCertificateInfo(null); // Clear any previous certificate info
+    }
+  };
+
+  // Define styles based on the validity of the certificate
+  const messageStyle =
+    responseMessage === "Certificate is valid"
+      ? "text-green-500" // Green color for valid certificate
+      : "text-red-500"; // Red color for invalid certificate or error
+
+  return (
+    <>
+      <Navbar />
+      <h1 className="lg:text-xl text-5xl font-semibold text-center my-10">
+        Certificate Verification
+      </h1>
+      <main className="lg:w-[30%] w-full py-3 mx-auto flex flex-col justify-center items-center border border-1 border-black rounded-md ">
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col justify-center items-center"
+        >
+          <input
+            autoCapitalize="on"
+            type="text"
+            className="outline-0 border-1 border-black border rounded-sm px-4 py-1 h-20 lg:h-auto lg:text-base text-4xl"
+            value={certificateId.toUpperCase()}
+            onChange={(e) => setCertificateId(e.target.value)}
+            placeholder="Enter Certificate ID"
+            required
+          />
+          <button
+            type="submit"
+            className="bg-blue-500 lg:my-3 text-white lg:px-3 lg:py-1 lg:rounded-sm text-4xl lg:text-base px-12 py-3 my-10 rounded-lg"
+            id="submit-btn"
+          >
+            Submit
+          </button>
+        </form>
+        {/* Displaying the response message with dynamic color */}
+        <h1
+          className={`${messageStyle}  text-4xl lg:text-base my-7 lg:my-0 lg:mt-4`}
+        >
+          {responseMessage}
+        </h1>
+        {certificateInfo && (
+          <div className="mt-4 w-[80%] mx-auto text-4xl lg:text-base my-7 lg:my-0 lg:mt-4">
+            <div className="flex justify-center items-center">
+              <div className="w-full">
+                <ul>
+                  <li className="flex justify-between mb-2">
+                    <p className="font-semibold">Student Name:</p>
+                    <p>{certificateInfo.info.username}</p>
+                  </li>
+                  <li className="flex justify-between mb-2">
+                    <p className="font-semibold">Course Name:</p>
+                    <p>{certificateInfo.info.course}</p>
+                  </li>
+                  <li className="flex justify-between mb-2">
+                    <p className="font-semibold">Final Assessment Score:</p>
+                    <p>{certificateInfo.info.mark}</p>
+                  </li>
+                  <li className="flex justify-between mb-2">
+                    <p className="font-semibold">Date of Certification:</p>
+                    <p>{certificateInfo.info.doc}</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        )}
+      </main>
+      <Footer link={WP_Link} />
+    </>
+  );
+};
+
+export default Verify;
