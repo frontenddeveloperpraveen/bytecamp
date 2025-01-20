@@ -75,7 +75,7 @@ const Footer = ({ link }) => {
           <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png" />
         </a>
         <a
-          href="https://instagram.com/byte.camp"
+          href="https://instagram.com/bytecamp.in"
           target="_blank"
           rel="noopener noreferrer"
         >
