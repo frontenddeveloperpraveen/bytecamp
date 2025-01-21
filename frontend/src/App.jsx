@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Python from "./Components/Training/Python/Python";
 import Verify from "./Components/Training/Certificate_vertification/Verify";
-import Zoho from "./Components/Zoho";
 
 function App() {
   return (
