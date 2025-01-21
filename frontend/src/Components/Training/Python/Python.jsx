@@ -207,7 +207,7 @@ const Python = () => {
         "I found it beneficial. However, the mentor should focus on improving pronunciation of words to enhance the overall learning experience. However I enjoyed the complete course.",
     },
     {
-      name: "Ritvik S",
+      name: "Riya",
       image:
         "https://www.dodgejourneyforum.com/uploads/monthly_2020_12/R.png.f84f027586c0815b943b4892d61266a5.png",
       review:
