@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Python from "./Components/Training/Python/Python";
 import Verify from "./Components/Training/Certificate_vertification/Verify";
+import Zoho from "./Components/Zoho";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         />
         <Route path="/training/python-programming" element={<Python />} />
         <Route path="/certificate_verify" element={<Verify />} />
+        <Route path="/zoho-domain-verification.html" element={<Zoho />} />
         {/* Redirect 404 paths to the Python course */}
         <Route
           path="/training/*"
