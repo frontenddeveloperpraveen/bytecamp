@@ -14,7 +14,6 @@ function App() {
         />
         <Route path="/training/python-programming" element={<Python />} />
         <Route path="/certificate_verify" element={<Verify />} />
-        <Route path="/zohoverify/verifyforzoho.html" element={<Zoho />} />
         {/* Redirect 404 paths to the Python course */}
         <Route
           path="/training/*"
