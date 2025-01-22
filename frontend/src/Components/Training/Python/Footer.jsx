@@ -308,8 +308,8 @@ const Footer = ({ link }) => {
             please contact us at:
             <br />
             Email: {"  "}
-            <a href="mailto:mail.bytecamp@gmail.com" className="font-semibold">
-              mail.bytecamp@gmail.com
+            <a href="support@bytecamp.in" className="font-semibold">
+              support@bytecamp.in
             </a>
             <br />
           </p>

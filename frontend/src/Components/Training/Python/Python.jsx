@@ -161,7 +161,7 @@ const Python = () => {
       answer: `
       <ul style="list-style:decimal; margin-left:20px">
         <li>Ensure you have sent the payment screenshot with the Transaction ID to the correct <a href="${WP_Link.default}" target="blank" ><b style="color:#0000EE">WhatsApp number</b></a>.</li>
-        <li>If you haven’t received a call within 6 hours, please contact us on <a href="mailto:mail.bytecamp@gmail.com" target="blank" ><b style="color:#0000EE">mail.bytecamp@gmail.com</b></a>.</li>
+        <li>If you haven’t received a call within 6 hours, please contact us on <a href="mailto:support@bytecamp.in" target="blank" ><b style="color:#0000EE">support@bytecamp.in</b></a>.</li>
         <li>Our team will prioritize and assist you promptly.</li>
       </ul>
     `,
@@ -172,7 +172,7 @@ const Python = () => {
     },
     {
       question: "I don't have UPI, What can I do?",
-      answer: `<p>You can contact our Team either through  <a href="${WP_Link.default}" target="blank" ><b style="color:#0000EE">WhatsApp</b></a> or <a href="mailto:mail.bytecamp@gmail.com" target="blank" ><b style="color:#0000EE">Email</b></a>. They will guide you to resolve your problem.</p>`,
+      answer: `<p>You can contact our Team either through  <a href="${WP_Link.default}" target="blank" ><b style="color:#0000EE">WhatsApp</b></a> or <a href="mailto:support@bytecamp.in" target="blank" ><b style="color:#0000EE">Email</b></a>. They will guide you to resolve your problem.</p>`,
     },
   ];
 
